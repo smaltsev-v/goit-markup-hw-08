@@ -1,0 +1,82 @@
+.Subscribe {
+  margin-left: 107px;
+}
+
+.Subscribe-title {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+  justify-self: start;
+}
+.sub-wrap__input {
+  width: 358px;
+  height: 50px;
+  background-color: $bg-color-secondary;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.Subscribe input[placeholder='E-mail'] {
+  padding-left: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.sub-wrap__input {
+  color: #fff;
+  margin-right: 8px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-wrap__input {
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+}
+
+.sub-wrap__button {
+  margin: 0;
+  position: relative;
+  padding-left: 29px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: $accent-color;
+  border-radius: 4px;
+  border: 0px solid transparent;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sub-wrap__button {
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}
+.sub-wrap__button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.sub-wrap__icon {
+  position: absolute;
+  top: 50%;
+  left: 143px;
+  transform: translatey(-50%);
+  margin-right: 29px;
+}

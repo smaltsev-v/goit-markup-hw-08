@@ -1,0 +1,52 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  height: auto;
+  display: block;
+  min-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+.no-padding {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, Helvetica, sans-serif;
+  color: $primaty-text-color;
+  background-color: $primary-bg-color;
+}
+
+.hidden-header {
+  display: none;
+}

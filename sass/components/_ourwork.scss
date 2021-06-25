@@ -1,0 +1,31 @@
+.ourwork-list {
+  position: relative;
+  margin-top: -30px;
+  margin-left: -30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ourwork-list {
+  & > &__item {
+    flex-basis: calc (100% / 3 -30px);
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+}
+.ourwork-list__container {
+  position: absolute;
+  width: 370px;
+  height: 70px;
+  bottom: 0;
+  background-color: $bg-ourwork-label;
+  padding: 27px 82px;
+}
+.ourwork-list__label {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-bg-color;
+}
