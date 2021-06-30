@@ -45,7 +45,11 @@
     opacity: 1;
   }
 }
-
+@media (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
 .site-nav__item {
   &:not(:first-child) {
     margin-left: 50px;
