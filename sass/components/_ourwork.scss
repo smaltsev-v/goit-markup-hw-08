@@ -29,3 +29,11 @@
   text-transform: uppercase;
   color: $primary-bg-color;
 }
+.dispay-box {
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}

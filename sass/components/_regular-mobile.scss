@@ -1,0 +1,35 @@
+.regular {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: -30px;
+  margin-right: -30px;
+
+  & > &__item {
+    flex-basis: calc (100% / 2 -30px);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+.regular-item {
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.regular-item__link {
+  display: block;
+  border: 1px solid $Regular;
+  padding: 16px 32px;
+  border-radius: 4px;
+  fill: $Regular;
+  transition-property: fill, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
