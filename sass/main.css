@@ -728,15 +728,11 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-bottom: -30px;
-  margin-right: -30px;
 }
 
 .regular > .regular__item {
-  -ms-flex-preferred-size: calc 100%/2 -30px;
-      flex-basis: calc 100%/2 -30px;
-  margin-right: 30px;
-  margin-bottom: 30px;
+  -ms-flex-preferred-size: calc 50%;
+      flex-basis: calc 50%;
 }
 
 .regular-item:hover {
