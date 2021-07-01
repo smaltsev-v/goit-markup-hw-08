@@ -10,6 +10,12 @@
     margin-bottom: 30px;
   }
 }
+@media (min-width: 1200px) {
+  .staff {
+    width: 100vh;
+  }
+}
+
 .staff-box {
   padding-top: 30px;
   padding-bottom: 24px;

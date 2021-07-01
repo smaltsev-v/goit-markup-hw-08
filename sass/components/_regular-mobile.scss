@@ -1,17 +1,17 @@
 .regular {
   display: flex;
   flex-wrap: wrap;
-
-  // margin-bottom: -30px;
-  // margin-right: -30px;
-
-  & > &__item {
-    flex-basis: calc (100% / 2);
-    // margin-right: 30px;
-    // margin-bottom: 30px;
-  }
+  justify-content: center;
 }
+
 .regular-item {
+  display: block;
+  width: calc (50% -15px);
+  margin-bottom: 30px;
+
+  &:nth-child(2n) {
+    margin-left: 30px;
+  }
   &:hover {
     color: $accent-color;
   }

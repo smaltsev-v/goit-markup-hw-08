@@ -18,7 +18,7 @@
     <!--Верхняя линия-->
     <header class="header">
       <div class="container main-flex">
-        <!-- <button
+        <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
           aria-controls="mobile-menu"
@@ -26,40 +26,43 @@
           <svg width="24" height="24">
             <use href="./images/icon/icon.svg#icon-menu"></use>
           </svg>
-        </button> -->
+        </button>
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             >Web<span class="logo__title">Studio</span></a
           >
-
-          <ul class="site-nav currnet-box">
-            <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link current">Студия</a>
+          <div class="site-hidden">
+            <ul class="site-nav currnet-box">
+              <li class="site-nav__item">
+                <a href="./index.html" class="site-nav__link current">Студия</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#" class="site-nav__link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="site-hidden">
+          <ul class="main-contact">
+            <li class="main-contact__item">
+              <a href="mailto:info@devstudio.com" class="main-contact__link">
+                <svg class="main-contact__icon" width="16" height="16">
+                  <use href="./images/icon/icon.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
             </li>
-            <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#" class="site-nav__link">Контакты</a>
+            <li class="main-contact__item">
+              <a href="tel:+380961111111" class="main-contact__link">
+                <svg class="main-contact__icon" width="16" height="16">
+                  <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <ul class="main-contact">
-          <li class="main-contact__item">
-            <a href="mailto:info@devstudio.com" class="main-contact__link">
-              <svg class="main-contact__icon" width="16" height="16">
-                <use href="./images/icon/icon.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="main-contact__item">
-            <a href="tel:+380961111111" class="main-contact__link">
-              <svg class="main-contact__icon" width="16" height="16">
-                <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -529,7 +532,7 @@
         <button type="submit" class="button-send">Отправить</button>
       </form>
     </div>
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="24" height="24">
           <use href="./images/icon/icon.svg#icon-Vector"></use>
@@ -576,15 +579,15 @@
           <a class="mobile-social__link" href="#">LinkedIn</a>
         </li>
       </ul>
-    </div> -->
-    <!-- <script
+    </div>
+    -->
+    <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"
-    >
-  </script> -->
+    ></script>
     <script src="./js/modal.js"></script>
-    <!-- <script src="./js/mobile-menu.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
