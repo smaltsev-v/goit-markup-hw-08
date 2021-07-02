@@ -1,28 +1,35 @@
 .section__bg {
   background-color: $portfolio-secondary-color;
 }
-.section-team__item {
-  background-color: $primary-bg-color;
-  border-radius: 0px 0px 4px 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  &:not(:last-child) {
-    margin-bottom: 30px;
+.section-team {
+  &__item {
+    background-color: $primary-bg-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
   }
-}
-@media (min-width: 767px) {
-  .staff {
-    width: 100vh;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: calc(-1 * 30px);
+    margin-top: calc(-1 * 30px);
+    & > &__item {
+      flex-basis: calc (100% / 4 -30px);
+      margin-left: 30px;
+      margin-top: 30px;
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
+    }
   }
-}
-@media (min-width: 1199px) {
-  .staff {
-    width: 354px;
-  }
-}
-@media (min-width: 1200px) {
-  .staff {
-    width: 270ipx;
+  @media screen and (min-width: 1200px) {
+    & > &__item {
+      flex-basis: calc (100% / 4 -30px);
+    }
   }
 }
 
@@ -30,6 +37,7 @@
   padding-top: 30px;
   padding-bottom: 24px;
 }
+
 .staff-box__item {
   color: $title-text-color;
   font-weight: 500;
@@ -39,6 +47,7 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
 }
+
 .staff-box__description {
   color: $primaty-text-color;
   font-weight: normal;

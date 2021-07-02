@@ -1,9 +1,14 @@
 .feature-list {
   color: $title-text-color;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
   &__title {
     color: $title-text-color;
   }
 }
+
 // .feature-list__item {
 //   // &:not(:first-child) {
 //   //   margin-left: 30px;
@@ -16,6 +21,9 @@
   justify-content: center;
   padding: 25px 0px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 50%;
+  }
 }
 
 .feature-list__title {

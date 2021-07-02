@@ -15,21 +15,37 @@
   &:hover {
     color: $accent-color;
   }
-}
+  @media screen and (min-width: 768px) {
+    &:nth-child(1n) {
+      margin-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .regular {
+      flex-wrap: nowrap;
+    }
+    &:nth-child(1n) {
+      margin-left: 0px;
+    }
+    // &:not(:first-child) {
+    //   margin-right: 30px;
+    // }
+  }
 
-.regular-item__link {
-  display: block;
-  border: 1px solid $Regular;
-  padding: 16px 32px;
-  border-radius: 4px;
-  fill: $Regular;
-  transition-property: fill, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-    border: 1px solid $accent-color;
-    outline: none;
+  .regular-item__link {
+    display: block;
+    border: 1px solid $Regular;
+    padding: 16px 32px;
+    border-radius: 4px;
+    fill: $Regular;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      border: 1px solid $accent-color;
+      outline: none;
+    }
   }
 }
