@@ -24,12 +24,13 @@
     .regular {
       flex-wrap: nowrap;
     }
+
     &:nth-child(1n) {
       margin-left: 0px;
     }
-    // &:not(:first-child) {
-    //   margin-right: 30px;
-    // }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   .regular-item__link {

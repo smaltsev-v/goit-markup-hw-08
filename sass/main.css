@@ -846,6 +846,9 @@ body {
   .regular-item:nth-child(1n) {
     margin-left: 0px;
   }
+  .regular-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .regular-item .regular-item__link {
