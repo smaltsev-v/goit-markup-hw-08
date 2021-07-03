@@ -1223,7 +1223,7 @@ body {
 }
 
 .modal-button:hover, .modal-button:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .form {
@@ -1291,16 +1291,21 @@ body {
   color: rgba(117, 117, 117, 0.5);
 }
 
-.from-titel {
+.from-title {
   margin: 0;
   padding: 0;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
   margin-bottom: 12px;
+  color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .from-title {
+    line-height: 1.15;
+  }
 }
 
 .from-field input[type='text'] {
