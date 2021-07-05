@@ -1,10 +1,25 @@
-.form {
+.form.modal {
   width: 528px;
-
   margin-left: auto;
   margin-right: auto;
   padding: 40px;
 }
+.from-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 12px;
+  color: $title-text-color;
+  @media screen and (max-width: 1200px) {
+    font-size: 15px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
+}
+
 .from-field {
   position: relative;
   display: flex;
@@ -34,19 +49,13 @@
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-}
-
-.from-title {
-  margin: 0;
-  padding: 0;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.5;
-  text-align: center;
-  margin-bottom: 12px;
-  color: #212121;
   @media screen and (min-width: 1200px) {
-    line-height: 1.15;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (max-width: 479px) {
+    height: 80px;
   }
 }
 
@@ -79,9 +88,13 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input {
-  &:focus {
+  &:focus,
+  &:hover {
     border: 1px solid $accent-color;
     outline: none;
+  }
+  @media screen and (max-width: 479px) {
+    height: 30px;
   }
 }
 .from-icon {
@@ -102,6 +115,28 @@
   }
 }
 
+.form-check {
+  display: inline-block;
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  color: $primaty-text-color;
+
+  &:hover,
+  &:focus {
+    outline: 2px solid $accent-color;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 .contract {
   display: inline-block;
   font-size: 12px;
@@ -144,8 +179,8 @@
 }
 .checkbox-icon {
   position: absolute;
-  left: 1px;
-  top: 50%;
+  left: 18px;
+  bottom: 80px;
   transform: translateY(-50%);
   display: inline-block;
   width: 16px;
@@ -181,6 +216,9 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    margin-left: 35px;
+  }
 }
 .button-send {
   &:focus,

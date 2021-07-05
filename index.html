@@ -10,59 +10,65 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" href="./css/modern-normalize.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Верхняя линия -->
     <header class="header">
       <div class="container main-flex">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="24" height="24">
-            <use href="./images/icon/icon.svg#icon-menu"></use>
-          </svg>
-        </button>
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             >Web<span class="logo__title">Studio</span></a
           >
-          <div class="site-hidden">
-            <ul class="site-nav currnet-box">
-              <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link current">Студия</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="#" class="site-nav__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="site-hidden flex-site">
-          <ul class="main-contact">
-            <li class="main-contact__item">
-              <a href="mailto:info@devstudio.com" class="main-contact__link">
-                <svg class="main-contact__icon" width="16" height="16">
-                  <use href="./images/icon/icon.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
-              >
+
+          <ul class="site-nav currnet-box">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link current">Студия</a>
             </li>
-            <li class="main-contact__item">
-              <a href="tel:+380961111111" class="main-contact__link">
-                <svg class="main-contact__icon" width="16" height="16">
-                  <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          data-menu-open
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/icon/icon.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="main-contact">
+          <li class="main-contact__item">
+            <a href="mailto:info@devstudio.com" class="main-contact__link">
+              <svg class="main-contact__icon" width="16" height="16">
+                <use href="./images/icon/icon.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="main-contact__item">
+            <a href="tel:+380961111111" class="main-contact__link">
+              <svg class="main-contact__icon" width="16" height="16">
+                <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -151,6 +157,7 @@
           <ul class="ourwork-list">
             <li class="ourwork-list__item">
               <img
+                srcset="./images/box1.jpg 1x, ./images/box1x2.jpg 2x"
                 src="./images/box1.jpg"
                 width="370"
                 alt="человек набирая код на клавиатуре выводя информацию на планшет сверяя с блочной схемой"
@@ -161,6 +168,7 @@
             </li>
             <li class="ourwork-list__item">
               <img
+                srcset="./images/box2.jpg 1x, ./images/box2x2.jpg 2x"
                 src="./images/box2.jpg"
                 width="370"
                 alt="На экране ноутбука изображены примеры работ в мобильных приложениях"
@@ -171,6 +179,7 @@
             </li>
             <li class="ourwork-list__item">
               <img
+                srcset="./images/box3.jpg 1x, ./images/box3x2.jpg 2x"
                 src="./images/box3.jpg"
                 width="370"
                 alt="планшет с палитрой цветов"
@@ -189,6 +198,7 @@
           <ul class="section-team">
             <li class="section-team__item">
               <img
+                srcset="./images/img1.jpg 1x, ./images/img1x2.jpg 2x"
                 src="./images/img1.jpg"
                 class="staff"
                 width="270"
@@ -230,7 +240,13 @@
               </div>
             </li>
             <li class="section-team__item">
-              <img src="images/img2.jpg" class="staff" width="270" alt="фото" />
+              <img
+                srcset="./images/img2.jpg 1x, ./images/img2x2.jpg 2x"
+                src="./images/img2.jpg"
+                class="staff"
+                width="270"
+                alt="фото"
+              />
               <div class="staff-box">
                 <h3 class="staff-box__item">Ольга Репина</h3>
                 <p class="staff-box__description">Frontend Developer</p>
@@ -268,6 +284,7 @@
             </li>
             <li class="section-team__item">
               <img
+                srcset="./images/img3.jpg 1x, ./images/img3x3.jpg 2x"
                 src="./images/img3.jpg"
                 class="staff"
                 width="270"
@@ -310,6 +327,7 @@
             </li>
             <li class="section-team__item">
               <img
+                srcset="./images/img4.jpg 1x, ./images/img4x2.jpg 2x"
                 src="./images/img4.jpg"
                 class="staff"
                 width="270"
@@ -525,7 +543,7 @@
             placeholder="Введите текст"
           ></textarea>
         </label>
-        <label class="from-field label">
+        <label class="form-check label">
           <input type="checkbox" class="checkbox_input" name="agreement" />
           <span class="checkbox-icon"></span>
           <span class="from-label"
@@ -537,9 +555,12 @@
       </form>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg width="24" height="24">
-          <use href="./images/icon/icon.svg#icon-Vector"></use>
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+          <use
+            class="icon-cross"
+            href="./images/icon/icon.svg#icon-Vector"
+          ></use>
         </svg>
       </button>
 
@@ -570,15 +591,15 @@
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Instagram</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Twitter</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Facebook</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">LinkedIn</a>
         </li>

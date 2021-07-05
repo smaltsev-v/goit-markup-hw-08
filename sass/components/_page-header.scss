@@ -22,14 +22,17 @@
 .main-nav {
   display: flex;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 16px;
+    margin-top: 16px;
+  }
 }
 // site-nav
 .flex-site {
   margin-left: auto;
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-  }
 }
 .site-nav {
+  position: relative;
   &:active {
     color: $primaty-text-color;
   }
@@ -49,12 +52,18 @@
   &__link:focus::after {
     opacity: 1;
   }
-}
-@media (max-width: 767px) {
-  .site-hidden {
+
+  @media screen and (max-width: 767px) {
     display: none;
   }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
+
 .site-nav__item {
   &:not(:first-child) {
     margin-left: 50px;
@@ -105,23 +114,22 @@
 .main-contact__link {
   display: flex;
   color: $primaty-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $primaty-text-color;
   text-decoration: none;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .main-contact {
-  color: $primaty-text-color;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   display: flex;
   margin-left: auto;
-  align-items: center;
-}
-.main-contact {
-  &__item + &__item {
-    margin-left: 50px;
+  @media screen and (min-width: 1199px) {
+    &__item + &__item {
+      margin-left: 50px;
+    }
   }
   &__link:hover > &__icon {
     fill: #2196f3;
@@ -129,7 +137,27 @@
   &__link:focus > &__icon {
     fill: #2196f3;
   }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-direction: column;
+  }
 }
+
+.main-contact__item {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & + .contacts__item {
+      margin-left: 50px;
+    }
+  }
+}
+
 .main-contact__icon {
   fill: $content-icon;
   margin-right: 10px;
@@ -140,5 +168,9 @@
   &:focus {
     color: $accent-color;
     outline: none;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }

@@ -15,53 +15,58 @@
     <!-- Верхняя линия -->
     <header class="header">
       <div class="container main-flex">
-        <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg width="24" height="24">
-            <use href="./images/icon/icon.svg#icon-menu"></use>
-          </svg>
-        </button>
         <nav class="main-nav">
           <a href="./index.html" class="logo"
             >Web<span class="logo__title">Studio</span></a
           >
-          <div class="site-hidden">
-            <ul class="site-nav">
-              <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link">Студия</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="./portfolio.html" class="site-nav__link current"
-                  >Портфолио</a
-                >
-              </li>
-              <li class="site-nav__item">
-                <a href="#" class="site-nav__link">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div class="site-hidden">
-          <ul class="main-contact">
-            <li class="main-contact__item">
-              <a href="mailto:info@devstudio.com" class="main-contact__link">
-                <svg class="main-contact__icon" width="16" height="12">
-                  <use href="./images/icon/icon.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
-              >
+
+          <ul class="site-nav currnet-box">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link current">Студия</a>
             </li>
-            <li class="main-contact__item">
-              <a href="tel:+380961111111" class="main-contact__link">
-                <svg class="main-contact__icon" width="16" height="16">
-                  <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Контакты</a>
             </li>
           </ul>
-        </div>
+        </nav>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          data-menu-open
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
+          >
+            <use
+              class="icon-menu"
+              href="./images/icon/icon.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <ul class="main-contact">
+          <li class="main-contact__item">
+            <a href="mailto:info@devstudio.com" class="main-contact__link">
+              <svg class="main-contact__icon" width="16" height="16">
+                <use href="./images/icon/icon.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="main-contact__item">
+            <a href="tel:+380961111111" class="main-contact__link">
+              <svg class="main-contact__icon" width="16" height="16">
+                <use href="./images/icon/icon.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
     <main>
@@ -118,6 +123,7 @@
                     цифрового шпионажа и атак на защищённые сервера конкурентов.
                   </p>
                   <img
+                    srcset="./images/imgp1.jpg 1x, ./images/imgp1x2.jpg 2x"
                     src="./images/imgp1.jpg"
                     class="projects__images"
                     width="370"
@@ -142,6 +148,7 @@
                   </p>
 
                   <img
+                    srcset="./images/imgp2.jpg 1x, ./images/imgp2x2.jpg 2x"
                     src="./images/imgp2.jpg"
                     class="projects__images"
                     width="370"
@@ -168,6 +175,7 @@
                     nemo.
                   </p>
                   <img
+                    srcset="./images/imgp3.jpg 1x, ./images/imgp3x2.jpg 2x"
                     src="./images/imgp3.jpg"
                     class="projects__images"
                     width="370"
@@ -191,6 +199,7 @@
                     nesciunt obcaecati vitae reiciendis ut architecto optio.
                   </p>
                   <img
+                    srcset="./images/imgp4.jpg 1x, ./images/imgp4x2.jpg 2x"
                     src="./images/imgp4.jpg"
                     class="projects__images"
                     width="370"
@@ -214,6 +223,7 @@
                     nobis labore maiores. Laboriosam, necessitatibus ad.
                   </p>
                   <img
+                    srcset="./images/imgp5.jpg 1x, ./images/imgp5x2.jpg 2x"
                     src="./images/imgp5.jpg"
                     class="projects__images"
                     width="370"
@@ -237,6 +247,7 @@
                     exercitationem eveniet non debitis necessitatibus pariatur?
                   </p>
                   <img
+                    srcset="./images/imgp6.jpg 1x, ./images/imgp6x2.jpg 2x"
                     src="./images/imgp6.jpg"
                     class="projects__images"
                     width="370"
@@ -261,7 +272,9 @@
                     consequatur ab, rerum quis ducimus qui ipsum quos quibusdam
                     earum! Itaque, laborum!
                   </p>
+
                   <img
+                    srcset="./images/imgp7.jpg 1x, ./images/imgp7x2.jpg 2x"
                     src="./images/imgp7.jpg"
                     class="projects__images"
                     width="370"
@@ -287,6 +300,7 @@
                     nobis illo, velit amet sapiente quos voluptate?
                   </p>
                   <img
+                    srcset="./images/imgp8.jpg 1x, ./images/imgp8x2.jpg 2x"
                     src="./images/imgp8.jpg"
                     class="projects__images"
                     width="370"
@@ -311,6 +325,7 @@
                     exercitationem.
                   </p>
                   <img
+                    srcset="./images/imgp9.jpg 1x, ./images/imgp9x2.jpg 2x"
                     src="./images/imgp9.jpg"
                     class="projects__images"
                     width="370"
@@ -444,15 +459,15 @@
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Instagram</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Twitter</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">Facebook</a>
         </li>
-        <li class="mobile-social__item">|</li>
+
         <li class="mobile-social__item">
           <a class="mobile-social__link" href="#">LinkedIn</a>
         </li>
