@@ -1,20 +1,30 @@
 .regular {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .regular-item {
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-  &:hover {
-    color: $accent-color;
+  width: calc((100% - 4 * 15px) / 2);
+  margin-left: 30px;
+  margin-top: 30px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 
 .regular-item__link {
-  display: block;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 92px;
   border: 1px solid $Regular;
-  padding: 16px 32px;
   border-radius: 4px;
   fill: $Regular;
   transition-property: fill, border;
