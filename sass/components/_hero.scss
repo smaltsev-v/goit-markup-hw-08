@@ -88,4 +88,8 @@
   background-color: $accent-color;
   font-weight: bold;
   text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
 }

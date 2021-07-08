@@ -37,6 +37,7 @@
 
   &:hover,
   &:focus {
+    cursor: pointer;
     fill: $accent-color;
   }
 }
@@ -113,7 +114,7 @@
 }
 
 .mobile-social__item {
-  &:not(:first-child) {
+  &:not(:last-child) {
     margin-left: 10px;
     margin-right: 10px;
     &:not(:last-child)::after {

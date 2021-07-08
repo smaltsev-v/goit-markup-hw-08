@@ -647,6 +647,10 @@ body {
   text-align: center;
 }
 
+.hero-content__button:hover {
+  cursor: pointer;
+}
+
 .section-title {
   margin-bottom: 50px;
   color: #212121;
@@ -1218,6 +1222,7 @@ body {
 .sub-wrap__button:hover, .sub-wrap__button:focus {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
 
 .sub-wrap__button:focus {
@@ -1640,6 +1645,7 @@ body {
 }
 
 .button-portfolio__filters:hover, .button-portfolio__filters:focus {
+  cursor: pointer;
   color: #ffffff;
   background-color: #2196f3;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -1852,6 +1858,7 @@ body {
 }
 
 .menu-toggle:hover, .menu-toggle:focus {
+  cursor: pointer;
   fill: #2196f3;
 }
 
@@ -1936,12 +1943,12 @@ body {
   margin-top: 32px;
 }
 
-.mobile-social__item:not(:first-child) {
+.mobile-social__item:not(:last-child) {
   margin-left: 10px;
   margin-right: 10px;
 }
 
-.mobile-social__item:not(:first-child):not(:last-child)::after {
+.mobile-social__item:not(:last-child):not(:last-child)::after {
   content: '';
   width: 22px;
   height: 0px;
