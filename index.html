@@ -505,109 +505,118 @@
         </form>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
-      <form class="form modal">
-        <button data-modal-close class="modal-button">
-          <svg width="15" height="15">
+
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close type="button" class="close-button">
+          <svg class="close-icon" width="18" height="18">
             <use href="./images/icon/icon.svg#icon-Vector"></use>
           </svg>
         </button>
-        <p class="from-title">Оставьте свои данные, мы вам перезвоним</p>
-        <label class="from-field">
-          <span class="from-label">Имя</span>
-          <input type="text" class="form-input" name="Имя" placeholder=" " />
-          <svg class="from-icon" width="18" height="18">
-            <use href="./images/icon/icon.svg#icon-person"></use>
-          </svg>
-        </label>
-        <label class="from-field">
-          <span class="from-label">Телефон</span>
-          <input type="tel" class="form-input" name="tel" />
-          <svg class="from-icon" width="18" height="18">
-            <use href="./images/icon/icon.svg#icon-phonemodal"></use>
-          </svg>
-        </label>
-        <label class="from-field">
-          <span class="from-label">Почта</span>
-          <input type="email" class="form-input" name="mail" />
-          <svg class="from-icon" width="18" height="18">
-            <use href="./images/icon/icon.svg#icon-emailmodal"></use>
-          </svg>
-        </label>
-        <label class="from-field">
-          <span class="from-label">Комментарий</span>
+        <form class="send form">
+          <p class="form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label for="name" class="form-label">Имя</label>
+          <div class="form-field">
+            <input type="text" name="name" id="name" class="form-input" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icon/icon.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="tel" class="form-label">Телефон</label>
+          <div class="form-field">
+            <input type="tel" name="tel" id="tel" class="form-input" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icon/icon.svg#icon-phonemodal"></use>
+            </svg>
+          </div>
+          <label for="email" class="form-label">Почта</label>
+          <div class="form-field">
+            <input type="email" name="email" id="email" class="form-input" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icon/icon.svg#icon-emailmodal"></use>
+            </svg>
+          </div>
+          <label for="comment" class="form-label">Комментарий</label>
           <textarea
-            class="Comment"
-            name="Comment"
-            rows="10"
+            name="comment"
+            id="comment"
             placeholder="Введите текст"
+            class="form-com"
           ></textarea>
-        </label>
-        <label class="form-check label">
-          <input type="checkbox" class="checkbox_input" name="agreement" />
-          <span class="checkbox-icon"></span>
-          <span class="from-label"
-            >Соглашаюсь с рассылкой и принимаю&nbsp;
-            <a class="contract" href="#">Условия договора</a>
-          </span>
-        </label>
-        <button type="submit" class="button-send">Отправить</button>
-      </form>
+          <label class="form-check">
+            <input type="checkbox" name="policy" class="checkbox" />
+            <span class="check-icon"></span>
+            Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a href="" class="policy-link"> Условия договора</a>
+          </label>
+          <button type="submit" class="modal-button">Отправить</button>
+        </form>
+      </div>
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button
-        type="button"
-        class="menu-toggle js-close-menu"
-        aria-controls="mobile-menu"
-      >
-        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use
-            class="icon-cross"
-            href="./images/icon/icon.svg#icon-Vector"
-          ></use>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li class="mobile-menu__item">
-          <a href="./index.html" class="mobile-menu__link">Студия</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
-        </li>
-        <li class="mobile-menu__item">
-          <a href="#" class="mobile-menu__link">Контакты</a>
-        </li>
-      </ul>
-      <ul class="mobile-contact">
-        <li class="mobile-contact__item">
-          <a href="tel:+380961111111" class="mobile-contact__link">
-            +38 096 111 11 11</a
+      <div class="mob-menu__container">
+        <button
+          type="button"
+          class="menu-toggle js-close-menu"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Переключатель мобильного меню"
           >
-        </li>
-        <li class="mobile-contact__item">
-          <a href="mailto:info@devstudio.com" class="mobile-contact__link">
-            info@devstudio.com</a
-          >
-        </li>
-      </ul>
-      <ul class="mobile-social">
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="#">Instagram</a>
-        </li>
+            <use
+              class="icon-cross"
+              href="./images/icon/icon.svg#icon-Vector"
+            ></use>
+          </svg>
+        </button>
 
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="#">Twitter</a>
-        </li>
+        <ul class="mobile-menu">
+          <li class="mobile-menu__item">
+            <a href="./index.html" class="mobile-menu__link current__mobile"
+              >Студия</a
+            >
+          </li>
+          <li class="mobile-menu__item">
+            <a href="./portfolio.html" class="mobile-menu__link">Портфолио</a>
+          </li>
+          <li class="mobile-menu__item">
+            <a href="#" class="mobile-menu__link">Контакты</a>
+          </li>
+        </ul>
+        <div>
+          <ul class="mobile-contact">
+            <li class="mobile-contact__item">
+              <a href="tel:+380961111111" class="mobile-contact__link">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contact__item">
+              <a href="mailto:info@devstudio.com" class="mobile-contact__link">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Instagram</a>
+            </li>
 
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="#">Facebook</a>
-        </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Twitter</a>
+            </li>
 
-        <li class="mobile-social__item">
-          <a class="mobile-social__link" href="#">LinkedIn</a>
-        </li>
-      </ul>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">Facebook</a>
+            </li>
+
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
 
     <script

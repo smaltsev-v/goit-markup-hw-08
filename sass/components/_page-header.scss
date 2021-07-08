@@ -22,7 +22,7 @@
 .main-nav {
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 16px;
     margin-top: 16px;
   }
